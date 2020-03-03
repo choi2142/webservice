@@ -16,7 +16,6 @@ import com.choi.springwebservice.dto.posts.PostsSaveRequestDto;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PostServiceTest {
-	
 	@Autowired
 	private PostsService postsService;
 	
@@ -29,12 +28,12 @@ public class PostServiceTest {
 	}
 	
 	@Test
-	public void Dtoµ¥ÀÌÅÍ°¡_postsÅ×ÀÌºí¿¡_ÀúÀåµÈ´Ù() {
+	public void Dtoë°ì´í„°ê°€_postsí…Œì´ë¸”ì—_ì €ì¥ëœë‹¤() {
 		//given
 		PostsSaveRequestDto dto = PostsSaveRequestDto.builder()
 				.author("choi2142@naver.com")
-				.content("Å×½ºÆ®")
-				.title("Å×½ºÆ® Å¸ÀÌÆ²")
+				.content("í…ŒìŠ¤íŠ¸")
+				.title("í…ŒìŠ¤íŠ¸ íƒ€ì´í‹€")
 				.build();
 		
 		//when

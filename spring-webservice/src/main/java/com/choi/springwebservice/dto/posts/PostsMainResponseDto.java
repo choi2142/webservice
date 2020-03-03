@@ -21,9 +21,6 @@ public class PostsMainResponseDto {
 	        modifiedDate = toStringDateTime(entity.getModifiedDate());
 	    }
 
-	    /**
-	     * Java 8 버전
-	     */
 	    private String toStringDateTime(LocalDateTime localDateTime){
 	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 	        return Optional.ofNullable(localDateTime)
@@ -31,9 +28,6 @@ public class PostsMainResponseDto {
 	                .orElse("");
 	    }
 
-	    /**
-	     * Java 7 버전
-	     */
 	    private String toStringDateTimeByJava7(LocalDateTime localDateTime){
 	        if(localDateTime == null){
 	            return "";
